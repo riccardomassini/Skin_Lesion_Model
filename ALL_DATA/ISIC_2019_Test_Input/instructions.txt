@@ -1,0 +1,2 @@
+Download Test Data for Task 1 (8238 images) from this link: https://challenge.isic-archive.com/data/#2019.
+Place all the images into this directory.

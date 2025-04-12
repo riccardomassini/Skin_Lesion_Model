@@ -1,0 +1,1 @@
+Download zip file from here "https://data.mendeley.com/datasets/zr7vgbcyr2/1", and place only the images from the "imgs_part_3/" folder into this directory.

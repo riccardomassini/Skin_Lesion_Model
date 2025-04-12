@@ -1,0 +1,1 @@
+Download Data from here "https://www.kaggle.com/datasets/ifigotin/imagenetmini-1000" and place the "train" and "val" directories into this directory.

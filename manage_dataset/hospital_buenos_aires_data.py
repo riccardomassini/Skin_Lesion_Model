@@ -2,7 +2,6 @@
 Download only dataset from here: https://api.isic-archive.com/doi/hospital-italiano-de-buenos-aires-skin-lesions-images-2019-2022/
 Create a folder named 'hospital', unzip dataset and put it in 'ALLDATA/hospital'
 """
-from unittest.util import sorted_list_difference
 
 from manage_dataset.validate_image import is_image_valid
 import pandas as pd

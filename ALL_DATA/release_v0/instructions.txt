@@ -1,0 +1,2 @@
+Download the zip file from here "https://derm.cs.sfu.ca/Download.html", and place all files and folders into this directory.
+Note: To download the dataset, you need to register on the website and wait for an email with your login credentials.
