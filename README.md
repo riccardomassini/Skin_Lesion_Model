@@ -162,27 +162,6 @@ train_loader = DataLoader(train_dataset, batch_size=batch, shuffle=True, num_wor
 test_loader = DataLoader(test_dataset, batch_size=batch, shuffle=True, num_workers=workers)
 ```
 
-### 📊 Memory Usage Estimation
-
-As a rough guide, the memory consumption on the GPU will vary depending on the model and the chosen batch size. Here are the approximate memory usage estimates for different models with a batch size of 64 and 4 workers:
-
-- **ResNet-18**: 
-  - Using a batch size of 64 and 4 workers, this model will typically require around **2.5 - 3 GB** of GPU RAM.
-
-- **ResNet-50**:
-  - With the same batch size and number of workers, ResNet-50 will need around **4.5 - 5 GB** of GPU RAM.
-
-- **Vision Transformer (ViT)**:
-  - The ViT model is more memory-intensive and will generally require **8 - 10 GB** of GPU RAM with a batch size of 64 and 4 workers.
-
-- **Swin Transformer**:
-  - Swin Transformer is one of the most computationally expensive models and may require **10 - 12 GB** or more of GPU RAM depending on the specific configuration.
-
-**Important Note for CPU Usage**:  
-Running these models on the **CPU** is not recommended, especially with large models like ViT or Swin, as it could be very slow and consume excessive memory. CPUs are not optimized for the parallelized operations needed for deep learning tasks, which can lead to significantly longer training times and memory bottlenecks.
-
-For best performance, it is recommended to use a **batch size of at least 32-64** and **2-4 workers** to ensure optimal use of GPU resources without overloading memory. If you run into memory issues, you can reduce the batch size or use a smaller model.
-
 ### 🧑‍💻 Model Selection: Choose Your Model
 
 The project supports various deep learning models, each with different levels of complexity. You can select the model interactively via Python, where the script will prompt you to choose the model based on your preferences.
@@ -232,5 +211,27 @@ while chose not in chose_dict:
 selected_model = chose_dict[chose]
 model_name = models_dict[selected_model]
 ```
+
+### 📊 Memory Usage Estimation
+
+As a rough guide, the memory consumption on the GPU will vary depending on the model and the chosen batch size. Here are the approximate memory usage estimates for different models with a batch size of 64 and 4 workers:
+
+- **ResNet-18**: 
+  - Using a batch size of 64 and 4 workers, this model will typically require around **2.5 - 3 GB** of GPU RAM.
+
+- **ResNet-50**:
+  - With the same batch size and number of workers, ResNet-50 will need around **4.5 - 5 GB** of GPU RAM.
+
+- **Vision Transformer (ViT)**:
+  - The ViT model is more memory-intensive and will generally require **8 - 10 GB** of GPU RAM with a batch size of 64 and 4 workers.
+
+- **Swin Transformer**:
+  - Swin Transformer is one of the most computationally expensive models and may require **10 - 12 GB** or more of GPU RAM depending on the specific configuration.
+
+**Important Note for CPU Usage**:  
+Running these models on the **CPU** is not recommended, especially with large models like ViT or Swin, as it could be very slow and consume excessive memory. CPUs are not optimized for the parallelized operations needed for deep learning tasks, which can lead to significantly longer training times and memory bottlenecks.
+
+For best performance, it is recommended to use a **batch size of at least 32-64** and **2-4 workers** to ensure optimal use of GPU resources without overloading memory. If you run into memory issues, you can reduce the batch size or use a smaller model.
+
 
 ---
