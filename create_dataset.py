@@ -2,8 +2,9 @@ from manage_dataset.bcn_data import bcn_training_data, bcn_test_data
 from manage_dataset.ham_data import ham_training_data, ham_test_data
 from manage_dataset.derm7pt_data import derm7pt_training_data, derm7pt_test_data
 from manage_dataset.padufes_data import padufes_training_data
-from manage_dataset.hospital_buenos_aires_data import hospital_test_data
+from manage_dataset.hospital_buenos_aires_data import hospital_ba_test_data
 from manage_dataset.imagenet_data import imagenet_training_data, imagenet_test_data
+from manage_dataset.hospital_varese_data import hospital_va_training_data, hospital_va_test_data
 from manage_dataset.fitzpatrick import fitzpatrick_training_data, fitzpatrick_test_data
 from manage_dataset.degraded_data import degraded_test_data
 import os
@@ -28,17 +29,16 @@ if is_folder_empty("TRAIN_DATA/DERM"):
     ham_training_data()
     ham_test_data()
 
-if is_folder_empty("TRAIN_DATA/DERM") or is_folder_empty("TRAIN_DATA/DERM_CLINIC"):
+if is_folder_empty("TRAIN_DATA/DERM_CLINIC"):
     print("ADDING DERM7PT DATA ...")
     derm7pt_training_data()
     derm7pt_test_data()
 
-if is_folder_empty("TRAIN_DATA/DERM_CLINIC"):
     print("ADDING PAD-UFES DATA ...")
     padufes_training_data()
 
     print("ADDING HOSPITAL DE BUENOS AIRES DATA ...")
-    hospital_test_data()
+    hospital_ba_test_data()
 
 if is_folder_empty("TRAIN_DATA/OTHER"):
     print("ADDING IMAGENET DATA ...")
@@ -46,6 +46,10 @@ if is_folder_empty("TRAIN_DATA/OTHER"):
     imagenet_test_data()
 
 if is_folder_empty("TRAIN_DATA/PAN"):
+    print("ADDING HOSPITAL VARESE DATA ...")
+    hospital_va_training_data()
+    hospital_va_test_data()
+
     print("ADDING FITZPATRICK DATA ...")
     fitzpatrick_training_data()
     fitzpatrick_test_data()

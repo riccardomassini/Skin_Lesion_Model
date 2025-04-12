@@ -1,15 +1,10 @@
-"""
-Download only dataset from here: https://api.isic-archive.com/doi/hospital-italiano-de-buenos-aires-skin-lesions-images-2019-2022/
-Create a folder named 'hospital', unzip dataset and put it in 'ALLDATA/hospital'
-"""
-
 from manage_dataset.validate_image import is_image_valid
 import pandas as pd
 import shutil
 import os
 
-def hospital_test_data():
-    src_path = "ALL_DATA/hospital/"
+def hospital_ba_test_data():
+    src_path = "ALL_DATA/hospital_buenos_aires/"
     path_image = src_path + "images/"
     path_csv = src_path + "metadata.csv"
     dst_path = "TEST_DATA/DERM_CLINIC/"

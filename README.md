@@ -18,14 +18,14 @@ It is recommended to create a **virtual environment** to avoid conflicts with ot
 
 For **Windows**:
 ```bash
-python -m venv venv  
-.\venv\Scripts\activate
+python -m venv your_venv  
+.\your_venv\Scripts\activate
 ```
 
 For **Linux/macOS**:
 ```bash
-python3 -m venv venv  
-source venv/bin/activate
+python3 -m venv your_venv  
+source your_venv/bin/activate
 ```
 
 Additionally, make sure to install the required Python packages by running:
@@ -81,11 +81,11 @@ Follow the instructions below to download and prepare the datasets required for 
      - Download the zip file and place the images from the `imgs_part_1/` folder into `ALL_DATA/img_part_1/`. Then, do the same for the `imgs_part_2/` and `imgs_part_3/` folders, placing the respective images into `ALL_DATA/img_part_2/` and `ALL_DATA/img_part_3/`.
 
   2. **Hospital Italiano de Buenos Aires Dataset**:
-     - Download the zip file with the description `The complete bundle of all images, metadata, and supplemental files related to this dataset` and place `images` folder and `metadata.cvs` into `ALL_DATA/hospital/` directory.
+     - Download the zip file with the description `The complete bundle of all images, metadata, and supplemental files related to this dataset` and place `images` folder and `metadata.cvs` into `ALL_DATA/hospital_buenos_aires/` directory.
 
 ### 📁 `DERM` and `DERM_CLINIC` – Dermatoscopic and Clinical Image Dataset
 
-- **Links**:
+- **Link**:
   - [Derm7pt](https://derm.cs.sfu.ca/Download.html) 
 - **Description**:
   This dataset contains images of skin lesions, divided into two main categories:
@@ -99,12 +99,17 @@ Follow the instructions below to download and prepare the datasets required for 
 
 ### 📁 `PAN` – Panoramic / Body-Part Images
 
-- No manual download required.
-- These images will be automatically downloaded and processed by the code.
+- **Link**:
+  - [Hospital Varese](https://drive.google.com/drive/folders/1SdL61x75OpEc-z0L_o7irB0uX3o2fTKV)
+- **Instructions**:
+  1. **Hospital Varese Dataset**:
+     - Download the `train` and `test` folders and place them into `ALL_DATA/hospital_varese/` directory.
+
+The remaining data will be automatically downloaded from the internet during the process, so there's no need to manually add them to the folder.
 
 ### 📁 `OTHER` – Non-Medical Images
 
-- **Links**:
+- **Link**:
   - [ImageNet 1000 (mini)](https://www.kaggle.com/datasets/ifigotin/imagenetmini-1000)
 - **Instructions**:
   1. **ImageNet 1000 (mini) Dataset**:
@@ -224,12 +229,8 @@ while chose not in chose_dict:
     print("Choose a model:\n1 - ResNet-18\n2 - ResNet-50\n3 - Vision Transformer (ViT)\n4 - Swin Transformer")
     chose = input("Your choice: ")
 
-# Map the choice to the selected model
 selected_model = chose_dict[chose]
 model_name = models_dict[selected_model]
-
-# Print the selected model
-print(f"Selected model: {model_name}")
 ```
 
 ---
