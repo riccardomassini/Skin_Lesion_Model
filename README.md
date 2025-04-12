@@ -26,8 +26,6 @@ python create_dataset.py
 
 Follow the instructions below to download and prepare the datasets required for each category.
 
----
-
 ### 📁 `DERM` – Dermatoscopic Images
 
 - **Links**: 
@@ -42,8 +40,6 @@ Follow the instructions below to download and prepare the datasets required for 
      - Download Test Data for Task 1 (8238 images) and place all the images into `ALL_DATA/ISIC_2019_Training_Input/` directory.
      - Download Training Data for Task 1 (25331 images) and place all the images into `ALL_DATA/ISIC_2019_Test_Input/` directory.
 
----
-
 ### 📁 `DERM_CLINIC` – Clinical Smartphone Images
 
 - **Links**:
@@ -55,8 +51,6 @@ Follow the instructions below to download and prepare the datasets required for 
 
   2. **Hospital Italiano de Buenos Aires Dataset**:
      - Download the zip file with the description `The complete bundle of all images, metadata, and supplemental files related to this dataset` and place `images` folder and `metadata.cvs` into `ALL_DATA/hospital/` directory.
-
----
 
 ### 📁 `DERM` and `DERM_CLINIC` – Dermatoscopic and Clinical Image Dataset
 
@@ -71,15 +65,11 @@ Follow the instructions below to download and prepare the datasets required for 
   1. **Derm7pt Dataset**:
     - Download the zip file and place all files and folders into `ALL_DATA/release_v0/` directory.
     - Note: To download the dataset, you need to register on the website and wait for an email with your login credentials.
-     
----
 
 ### 📁 `PAN` – Panoramic / Body-Part Images
 
 - No manual download required.
 - These images will be automatically downloaded and processed by the code.
-
----
 
 ### 📁 `OTHER` – Non-Medical Images
 
@@ -88,7 +78,6 @@ Follow the instructions below to download and prepare the datasets required for 
 - **Instructions**:
   1. **ImageNet 1000 (mini) Dataset**:
      - Download data and place the `train` and `val` directories into `ALL_DATA/imagenet-mini/` directory.
----
 
 ### 📁 `LOW_QUALITY` – Low-Quality Images
 

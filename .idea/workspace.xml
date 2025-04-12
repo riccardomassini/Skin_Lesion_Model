@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89b0f393-ac5e-48a2-b061-20db9f9d6e16" name="Changes" comment="add instructions">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/launch_training_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/launch_training_test.py" afterDir="false" />
-    </list>
+    <list default="true" id="89b0f393-ac5e-48a2-b061-20db9f9d6e16" name="Changes" comment="change files" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,7 +106,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744447568562</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="change files">
+      <option name="closed" value="true" />
+      <created>1744453192470</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1744453192470</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -141,6 +145,7 @@
     <MESSAGE value="add files" />
     <MESSAGE value="change file name" />
     <MESSAGE value="add instructions" />
-    <option name="LAST_COMMIT_MESSAGE" value="add instructions" />
+    <MESSAGE value="change files" />
+    <option name="LAST_COMMIT_MESSAGE" value="change files" />
   </component>
 </project>
