@@ -3,7 +3,7 @@ Download dataset from here: https://derm.cs.sfu.ca/Download.html
 """
 
 from manage_dataset.validate_image import is_image_valid
-import sys, os
+import os
 import shutil
 import pandas as pd
 

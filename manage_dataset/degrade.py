@@ -1,7 +1,6 @@
 from torch.utils.data import Dataset
 from PIL import Image
 import numpy as np
-import random
 import cv2
 import random
 import os

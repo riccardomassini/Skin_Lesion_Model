@@ -4,12 +4,43 @@
 
 This project focuses on training and testing a deep learning model to classify images into **five categories** related to dermatological and non-medical contexts. The classifier is designed to distinguish between different image types based on source and content.
 
+### 🧑‍💻 Requirements
+
+To run this project, you'll need the following software and libraries installed:
+
+- **Python**: A modern version of Python (preferably 3.7 or higher).
+- **PyTorch**: A deep learning framework used for model training and inference.
+- **Torchvision**: A library that provides pre-trained models and datasets.
+
+You can install **PyTorch** and **Torchvision** by following the official guide: [PyTorch Installation](https://pytorch.org/get-started/locally/).
+
+It is recommended to create a **virtual environment** to avoid conflicts with other packages and to manage dependencies more easily, especially due to the number of libraries that need to be installed. You can create a virtual environment using the following commands:
+
+For **Windows**:
+```bash
+python -m venv venv  
+.\venv\Scripts\activate
+```
+
+For **Linux/macOS**:
+```bash
+python3 -m venv venv  
+source venv/bin/activate
+```
+
+Additionally, make sure to install the required Python packages by running:
+```bash
+pip install -r requirements.txt
+```
+
+This will install all the additional libraries needed to run the project.
+
 Before starting training or testing, make sure to **generate and organize the dataset** by following the instructions in the [Dataset Setup](#-dataset-setup) section below.  
 Once all the required images are downloaded and placed in their respective folders, run the following script to prepare the final dataset structure:
-
 ```bash
 python create_dataset.py
 ```
+
 ### 🔍 Classification Categories
 
 | Category       | Description                                                                 |

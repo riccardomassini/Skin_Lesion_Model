@@ -1,0 +1,13 @@
+pandas
+torch
+torchvision
+Pillow
+numpy
+opencv-python
+keras
+scikit-learn
+matplotlib
+seaborn
+timm
+requests
+json
