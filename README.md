@@ -12,7 +12,7 @@ To run this project, you'll need the following software and libraries installed:
 - **PyTorch**: A deep learning framework used for model training and inference.
 - **Torchvision**: A library that provides pre-trained models and datasets.
 
-You can install **PyTorch** and **Torchvision** by following the official guide: [PyTorch Installation](https://pytorch.org/get-started/locally/).
+You can install Python from the official website ([Python Installation](https://www.python.org/downloads/)) and PyTorch along with Torchvision by following the official guide: [PyTorch/Torchvision Installation](https://pytorch.org/get-started/locally/)
 
 It is recommended to create a **virtual environment** to avoid conflicts with other packages and to manage dependencies more easily, especially due to the number of libraries that need to be installed. You can create a virtual environment using the following commands:
 
