@@ -20,27 +20,27 @@ for el in classes:
 for el in classes[:2] + classes[3:]:
     os.makedirs(f"TRAIN_DATA/{el}", exist_ok=True)
 
-if is_folder_empty("TRAIN_DATA/DERM"):
+'''if is_folder_empty("TRAIN_DATA/DERM"):
     print("ADDING BCN DATA ...")
     bcn_training_data()
     bcn_test_data()
 
     print("ADDING HAM DATA ...")
     ham_training_data()
-    ham_test_data()
+    ham_test_data()'''
 
 if is_folder_empty("TRAIN_DATA/DERM_CLINIC"):
     print("ADDING DERM7PT DATA ...")
     derm7pt_training_data()
     derm7pt_test_data()
 
-    print("ADDING PAD-UFES DATA ...")
+    '''print("ADDING PAD-UFES DATA ...")
     padufes_training_data()
 
     print("ADDING HOSPITAL DE BUENOS AIRES DATA ...")
-    hospital_ba_test_data()
+    hospital_ba_test_data()'''
 
-if is_folder_empty("TRAIN_DATA/OTHER"):
+'''if is_folder_empty("TRAIN_DATA/OTHER"):
     print("ADDING IMAGENET DATA ...")
     imagenet_training_data()
     imagenet_test_data()
@@ -56,4 +56,4 @@ if is_folder_empty("TRAIN_DATA/PAN"):
 
 if is_folder_empty("TEST_DATA/LOW_QUALITY"):
     print("ADDING DEGRADED DATA ...")
-    degraded_test_data()
+    degraded_test_data()'''

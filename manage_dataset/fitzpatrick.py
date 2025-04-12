@@ -1,12 +1,9 @@
-from collections import defaultdict
 from requests import get
 from io import BytesIO
 from PIL import Image
 import pandas as pd
-import random
 import os
 
-csv_path = "ALL_DATA/fitzpatrick.csv"
 
 def fitzpatrick_training_data():
     dst_train_data = "TRAIN_DATA/PAN/"
@@ -14,7 +11,7 @@ def fitzpatrick_training_data():
 
     headers = {"User-Agent": "myagent"}
 
-    df = pd.read_csv(csv_path)
+    df = pd.read_csv("ALL_DATA/fitzpatrick.csv")
     train_url_list = df["train_url"].dropna().tolist()
 
     url_count = 0
@@ -41,7 +38,7 @@ def fitzpatrick_test_data():
 
     headers = {"User-Agent": "myagent"}
 
-    df = pd.read_csv(csv_path)
+    df = pd.read_csv("ALL_DATA/fitzpatrick.csv")
     test_url_list = df["test_url"].dropna().tolist()
 
     url_count = 0

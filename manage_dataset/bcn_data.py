@@ -4,23 +4,11 @@ import pandas as pd
 import shutil
 import os
 
-'''
-Scaricare:
-- Training Ground Truth
-- Test Ground Truth
-
-Scaricare dal Task 1:
-- Training Data
-- Test Data
-
-Al seguente sito https://challenge.isic-archive.com/data/#2019
-'''
 
 def bcn_training_data():
-    src_path = "ALL_DATA/"
     dst_path = "TRAIN_DATA/DERM/"
-    src_csv = src_path + "ISIC_2019_Training_GroundTruth.csv"
-    src_image = src_path + "ISIC_2019_Training_Input/"
+    src_csv = "ALL_DATA/ISIC_2019_Training_GroundTruth.csv"
+    src_image = "ALL_DATA/ISIC_2019_Training_Input/"
 
     df = pd.read_csv(src_csv)
 
@@ -55,11 +43,11 @@ def bcn_training_data():
         if el + ".jpg" not in os.listdir(dst_path) and is_image_valid(src_image + el + ".jpg"):
             shutil.copy(src_image + el + ".jpg", dst_path + el + ".jpg")
 
+
 def bcn_test_data():
-    src_path = "ALL_DATA/"
     dst_path = "TEST_DATA/DERM/"
-    src_csv = src_path + "ISIC_2019_Test_GroundTruth.csv"
-    src_image = src_path + "ISIC_2019_Test_Input/"
+    src_csv = "ALL_DATA/ISIC_2019_Test_GroundTruth.csv"
+    src_image = "ALL_DATA/ISIC_2019_Test_Input/"
 
     df = pd.read_csv(src_csv)
 

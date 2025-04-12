@@ -1,5 +1,6 @@
 from PIL import Image, UnidentifiedImageError
 
+
 def is_image_valid(image_path):
     try:
         image = Image.open(image_path)

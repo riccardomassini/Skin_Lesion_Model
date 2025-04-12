@@ -5,6 +5,7 @@ import cv2
 import random
 import os
 
+
 class ProbabilisticDegradationDataset(Dataset):
     def __init__(self, root_dir, target_class_mapping,
                  degradation_probability=0.2,

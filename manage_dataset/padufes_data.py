@@ -1,12 +1,7 @@
-"""
-Download from here: https://data.mendeley.com/datasets/zr7vgbcyr2/1
-
-Unzip images_part_1, images_part_2 and images_part_3 and put it all in ALL_DATA/
-"""
-
 from manage_dataset.validate_image import is_image_valid
 import shutil
 import os
+
 
 def padufes_training_data():
     derm_clinic_path = "TRAIN_DATA/DERM_CLINIC/"

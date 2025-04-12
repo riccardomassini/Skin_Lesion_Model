@@ -2,6 +2,7 @@ from manage_dataset.validate_image import is_image_valid
 import shutil
 import os
 
+
 def imagenet_training_data():
     src_path = "ALL_DATA/imagenet-mini/train/"
     dts_path = "TRAIN_DATA/OTHER/"
@@ -17,6 +18,7 @@ def imagenet_training_data():
 
             if copied_count >= img_for_class:
                 break
+
 
 def imagenet_test_data():
     src_path = "ALL_DATA/imagenet-mini/val/"

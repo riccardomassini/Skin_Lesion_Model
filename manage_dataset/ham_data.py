@@ -4,21 +4,11 @@ import pandas as pd
 import shutil
 import os
 
-"""
-Download from Task 3:
-- Training Data
-- Test Data
-- Training Ground Truth
-- Test Ground Truth
-
-from here: https://challenge.isic-archive.com/data/#2018
-"""
 
 def ham_training_data():
-    src_path = "ALL_DATA/"
     dst_path = "TRAIN_DATA/DERM/"
-    src_csv = src_path + "ISIC2018_Task3_Training_GroundTruth.csv"
-    src_image = src_path + "ISIC2018_Task3_Training_Input/"
+    src_csv = "ALL_DATA/ISIC2018_Task3_Training_GroundTruth.csv"
+    src_image = "ALL_DATA/ISIC2018_Task3_Training_Input/"
 
     df = pd.read_csv(src_csv)
 
@@ -53,11 +43,11 @@ def ham_training_data():
         if el + ".jpg" not in os.listdir(dst_path) and is_image_valid(src_image + el + ".jpg"):
             shutil.copy(src_image + el + ".jpg", dst_path + el + ".jpg")
 
+
 def ham_test_data():
-    src_path = "ALL_DATA/"
     dst_path = "TEST_DATA/DERM/"
-    src_csv = src_path + "ISIC2018_Task3_Test_GroundTruth.csv"
-    src_image = src_path + "ISIC2018_Task3_Test_Input/"
+    src_csv = "ALL_DATA/ISIC2018_Task3_Test_GroundTruth.csv"
+    src_image = "ALL_DATA/ISIC2018_Task3_Test_Input/"
 
     df = pd.read_csv(src_csv)
 

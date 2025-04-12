@@ -3,6 +3,7 @@ import pandas as pd
 import shutil
 import os
 
+
 def hospital_ba_test_data():
     src_path = "ALL_DATA/hospital_buenos_aires/"
     path_image = src_path + "images/"
