@@ -233,5 +233,4 @@ Running these models on the **CPU** is not recommended, especially with large mo
 
 For best performance, it is recommended to use a **batch size of at least 32-64** and **2-4 workers** to ensure optimal use of GPU resources without overloading memory. If you run into memory issues, you can reduce the batch size or use a smaller model.
 
-
 ---
