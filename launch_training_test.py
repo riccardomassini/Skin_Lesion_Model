@@ -12,6 +12,16 @@ from manage_dataset.degrade import ProbabilisticDegradationDataset, DegradedImag
 from training_testing_files.train import train
 from training_testing_files.test import test
 
+def get_positive_int(prompt):
+    while True:
+        try:
+            value = int(input(prompt))
+            if value > 0:
+                return value
+            else:
+                print("Please enter a number greater than 0.")
+        except ValueError:
+            print("That's not a valid number. Please enter a valid integer.")
 
 models_dict = {
     "resnet18": "resnet18",
@@ -36,6 +46,9 @@ while chose not in chose_dict:
 selected_model = chose_dict[chose]
 model_name = models_dict[selected_model]
 
+batch = get_positive_int("Choose batch_size: ")
+workers = get_positive_int("Choose num_workers: ")
+
 model, train_preprocess, test_preprocess = get_preprocess(model_name)
 
 degrader = DegradedImageTransform()
@@ -48,8 +61,8 @@ train_dataset = ProbabilisticDegradationDataset(
 )
 test_dataset = datasets.ImageFolder(root=TEST_DIR, transform=test_preprocess)
 
-train_loader = DataLoader(train_dataset, batch_size=64, shuffle=True, num_workers=4)
-test_loader = DataLoader(test_dataset, batch_size=64, shuffle=True, num_workers=4)
+train_loader = DataLoader(train_dataset, batch_size=batch, shuffle=True, num_workers=workers)
+test_loader = DataLoader(test_dataset, batch_size=batch, shuffle=True, num_workers=workers)
 
 paths = [s[0] for s in test_loader.dataset.samples]
 paths = [os.path.basename(p) for p in paths]

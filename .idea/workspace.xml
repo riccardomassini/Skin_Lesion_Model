@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89b0f393-ac5e-48a2-b061-20db9f9d6e16" name="Changes" comment="change file name">
-      <change beforePath="$PROJECT_DIR$/manage_dataset/hospital_buenos_aires_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage_dataset/hospital_buenos_aires_data.py" afterDir="false" />
+    <list default="true" id="89b0f393-ac5e-48a2-b061-20db9f9d6e16" name="Changes" comment="add instructions">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launch_training_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/launch_training_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +52,7 @@
   "keyToString": {
     "Python.create_dataset.executor": "Run",
     "Python.hospital_buenos_aires_data.executor": "Run",
+    "Python.launch_training_test.executor": "Run",
     "Python.main.executor": "Run",
     "Python.prova.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -99,7 +102,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744397372216</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add instructions">
+      <option name="closed" value="true" />
+      <created>1744447568562</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1744447568562</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -129,6 +140,7 @@
     <MESSAGE value="add python files" />
     <MESSAGE value="add files" />
     <MESSAGE value="change file name" />
-    <option name="LAST_COMMIT_MESSAGE" value="change file name" />
+    <MESSAGE value="add instructions" />
+    <option name="LAST_COMMIT_MESSAGE" value="add instructions" />
   </component>
 </project>
