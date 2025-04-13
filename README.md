@@ -28,6 +28,11 @@ python3 -m venv your_venv
 source your_venv/bin/activate
 ```
 
+To deactivate **virtual environment** (all systems):
+```bash
+deactivate
+```
+
 Additionally, make sure to install the required Python packages by running:
 ```bash
 pip install -r requirements.txt
