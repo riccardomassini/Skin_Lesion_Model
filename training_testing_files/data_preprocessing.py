@@ -1,6 +1,5 @@
 from torchvision import transforms
 import random
-import torch
 import timm
 
 class RandomResize:

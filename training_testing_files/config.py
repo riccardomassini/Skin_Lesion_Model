@@ -3,9 +3,10 @@ import os
 
 TRAIN_DIR = "TRAIN_DATA/"
 TEST_DIR = "TEST_DATA/"
-PARAM_DIR = "MODEL_AND_PARAMETERS_V4/"
-ACCLOSS_DIR = PARAM_DIR + "ACCURACY_AND_LOSS/"
-MODELS_DIR = PARAM_DIR + "BEST_MODELS/"
+PARAM_DIR = "MODEL_AND_PARAMETERS/"
+METRICS_DIR = PARAM_DIR + "METRICS/"
+LAST_MODELS_DIR = PARAM_DIR + "LAST_MODELS/"
+BEST_MODELS_DIR = PARAM_DIR + "BEST_MODELS/"
 MATRIX_DIR = PARAM_DIR + "CONFUSION_MATRIX/"
 BASE_CLASSES = ['DERM', 'DERM_CLINIC', 'OTHER', 'PAN']
 
@@ -17,9 +18,11 @@ TARGET_CLASS_MAPPING = {
     'PAN': 4
 }
 
-DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+DEVICE = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
+EPOCHS = 20
 
 os.makedirs(PARAM_DIR, exist_ok=True)
-os.makedirs(ACCLOSS_DIR, exist_ok=True)
-os.makedirs(MODELS_DIR, exist_ok=True)
+os.makedirs(METRICS_DIR, exist_ok=True)
+os.makedirs(LAST_MODELS_DIR, exist_ok=True)
+os.makedirs(BEST_MODELS_DIR, exist_ok=True)
 os.makedirs(MATRIX_DIR, exist_ok=True)
