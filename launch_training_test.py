@@ -37,7 +37,7 @@ test_loader = DataLoader(test_dataset, batch_size=batch, shuffle=True, num_worke
 
 model = model.to(DEVICE)
 criterion = nn.CrossEntropyLoss()
-optimizer = optim.AdamW(model.parameters(), lr=2e-5)
+optimizer = optim.AdamW(model.parameters(), lr=1e-4)
 scheduler = ReduceLROnPlateau(optimizer, mode='min', factor=0.5, patience=2, min_lr=1e-7, verbose=True)
 
 train_acc, train_loss, test_acc, test_loss, epoch_completed = load_checkpoint(model, optimizer, scheduler, LAST_MODELS_DIR + f"{selected_model}_checkpoint.pth")

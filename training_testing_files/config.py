@@ -18,7 +18,7 @@ TARGET_CLASS_MAPPING = {
     'PAN': 4
 }
 
-DEVICE = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
+DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 EPOCHS = 20
 
 os.makedirs(PARAM_DIR, exist_ok=True)
