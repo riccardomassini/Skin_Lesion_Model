@@ -83,15 +83,11 @@ class DegradedImageTransform:
         if not isinstance(image_np, np.ndarray):
             if isinstance(image_np, Image.Image):
                  image_np = np.array(image_np.convert("RGB"))
-            else:
-                raise TypeError(f"Input must be a NumPy array or PIL Image, got {type(image_np)}")
 
         if image_np.dtype != np.uint8:
             if image_np.dtype in [np.float32, np.float64] and image_np.min() >= 0 and image_np.max() <= 1:
-                 print(f"Warning: Degrader received float image, converting uint8 assumed range [0,1].")
                  image_np = (image_np * 255).astype(np.uint8)
             else:
-                 print(f"Warning: Unexpected image dtype {image_np.dtype} passed to Degrader. Trying to convert to uint8. May cause issues.")
                  image_np = np.clip(image_np, 0, 255).astype(np.uint8)
 
         image_np = self._ensure_rgb(image_np)
