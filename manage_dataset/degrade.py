@@ -137,7 +137,7 @@ class DegradedImageTransform:
 
     def brightness(self, image: np.ndarray) -> np.ndarray:
         hsv = cv2.cvtColor(image, cv2.COLOR_RGB2HSV).astype(np.float32)
-        delta_v = random.uniform(0.2, 0.3) * 100
+        delta_v = random.uniform(0.3, 0.5) * 100
         hsv[:, :, 2] = np.clip(hsv[:, :, 2] + delta_v, 0, 255)
         bright_image = cv2.cvtColor(hsv.astype(np.uint8), cv2.COLOR_HSV2RGB)
         return bright_image
