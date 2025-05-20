@@ -1,1 +1,0 @@
-Download the "train" and "test" folders, from "https://drive.google.com/drive/folders/1SdL61x75OpEc-z0L_o7irB0uX3o2fTKV", and place them into this directory.

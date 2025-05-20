@@ -4,7 +4,6 @@ from manage_dataset.derm7pt_data import derm7pt_training_data, derm7pt_test_data
 from manage_dataset.padufes_data import padufes_training_data
 from manage_dataset.hospital_buenos_aires_data import hospital_ba_test_data
 from manage_dataset.imagenet_data import imagenet_training_data, imagenet_test_data
-from manage_dataset.hospital_varese_data import hospital_va_training_data, hospital_va_test_data
 from manage_dataset.fitzpatrick import fitzpatrick_training_data, fitzpatrick_test_data
 from manage_dataset.degraded_data import degraded_test_data
 import os
