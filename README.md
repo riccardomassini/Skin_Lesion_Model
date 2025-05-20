@@ -104,13 +104,7 @@ Follow the instructions below to download and prepare the datasets required for 
 
 ### 📁 `PAN` – Panoramic / Body-Part Images
 
-- **Link**:
-  - [Hospital Varese](https://drive.google.com/drive/folders/1SdL61x75OpEc-z0L_o7irB0uX3o2fTKV)
-- **Instructions**:
-  1. **Hospital Varese Dataset**:
-     - Download the `train` and `test` folders and place them into `ALL_DATA/hospital_varese/` directory.
-
-The remaining data will be automatically downloaded from the internet during the process, so there's no need to manually add them to the folder.
+Data will be automatically downloaded from the internet during the process, so there's no need to manually add them to the folder.
 
 ### 📁 `OTHER` – Non-Medical Images
 
